@@ -54,13 +54,12 @@ public class TransferController {
         return null;
     }
 
-
-
-
-
-
-
-
+    @RequestMapping(value = "/whole/{org1}/{org2}", method = {RequestMethod.GET, RequestMethod.POST})
+    @ResponseBody
+    public String transferWhole(@PathVariable("org1") String org1, @PathVariable("org2") String org2){
+        //TODO
+        return null;
+    }
 
 
 
