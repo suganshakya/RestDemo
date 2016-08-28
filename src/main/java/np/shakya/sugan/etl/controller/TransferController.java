@@ -28,7 +28,7 @@ public class TransferController {
 
     @RequestMapping(value = "/customer/{org1}/{org2}", method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
-    public String transferCustomer(@PathVariable("org1") String org1, @PathVariable("org2") String org2){
+    public String transferCustomer(@PathVariable("org1") String org1, @PathVariable("org2") String org2) {
         //TODO
         // Read a customer with id from ebay
         /*
@@ -41,7 +41,7 @@ public class TransferController {
 
     @RequestMapping(value = "/order/{org1}/{org2}", method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
-    public String transferOrder(@PathVariable("org1") String org1, @PathVariable("org2") String org2){
+    public String transferOrder(@PathVariable("org1") String org1, @PathVariable("org2") String org2) {
         //TODO
         // Read an order of given id from ebay
         return null;
@@ -49,18 +49,53 @@ public class TransferController {
 
     @RequestMapping(value = "/product/{org1}/{org2}", method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
-    public String transferProduct(@PathVariable("org1") String org1, @PathVariable("org2") String org2){
+    public String transferProduct(@PathVariable("org1") String org1, @PathVariable("org2") String org2) {
         //TODO
         return null;
     }
 
     @RequestMapping(value = "/whole/{org1}/{org2}", method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
-    public String transferWhole(@PathVariable("org1") String org1, @PathVariable("org2") String org2){
+    public String transferWhole(@PathVariable("org1") String org1, @PathVariable("org2") String org2) {
         //TODO
         return null;
     }
 
+    @RequestMapping(value = "/add/{tableName}/{columnName}", method = RequestMethod.POST)
+    @ResponseBody
+    public void addColumn(@PathVariable("tableName") String tableName, @PathVariable("columnName") String columnName) {
+        // TODO
+        /**
+         *  ALTER TABLE tableName
+         *  ADD columnName dataType;
+         */
+    }
+
+    @RequestMapping(value = "/remove/{tableName}/{columnName}", method = RequestMethod.POST)
+    @ResponseBody
+    public void removeColumn(@PathVariable("tableName") String tableName, @PathVariable("columnName") String columnName) {
+        // TODO
+        /**
+         * ALTER TABLE tableName
+         * DROP COLUMN columnName
+         */
+    }
+
+    public void nullEntryCheck() {
+        // TODO
+    }
+
+    public void trimString() {
+        // TODO
+    }
+
+    public void removeDuplicateRow() {
+        //TODO
+    }
+
+    public void constraintCheck() {
+        // TODO
+    }
 
 
 }

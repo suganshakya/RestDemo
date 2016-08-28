@@ -52,8 +52,6 @@ public class LoadController {
         return null;
     }
 
-
-
     @RequestMapping(value = "/load/xml/{filter}", method = RequestMethod.GET)
     @ResponseBody
     public String loadXml(@PathVariable("filter") String filter){
