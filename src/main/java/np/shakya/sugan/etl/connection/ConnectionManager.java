@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 public class ConnectionManager {
 
     Connection connection;
-    private static final Logger LOG= Logger.getLogger(Object.class.getName());
+    private static final Logger LOG= Logger.getLogger(ConnectionManager.class.getName());
     List<Connection> connectionList;
 
     public ConnectionManager(){

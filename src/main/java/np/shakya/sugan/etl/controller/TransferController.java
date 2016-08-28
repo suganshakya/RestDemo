@@ -31,6 +31,11 @@ public class TransferController {
     public String transferCustomer(@PathVariable("org1") String org1, @PathVariable("org2") String org2){
         //TODO
         // Read a customer with id from ebay
+        /*
+        SQL Statement = "INSERT INTO table1 (column1, column2, ....)
+            SELECT col1, col2, ...
+            FROM table2;
+         */
         return null;
     }
 

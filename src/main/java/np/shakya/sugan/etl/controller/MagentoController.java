@@ -26,37 +26,103 @@ public class MagentoController {
     @Autowired
     private ProductDao productDao;
 
-    @RequestMapping(value = "/read/customer/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/read/customer/{id}", method = RequestMethod.POST)
     @ResponseBody
-    public String readCustomer(@PathVariable("id") long id){
+    public String readCustomer(@PathVariable("id") long id) {
         //TODO
-        // Read a customer with id from ebay
+        // Read a customer with id from magento
         return null;
     }
 
-    @RequestMapping(value = "/read/order/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/read/order/{id}", method = RequestMethod.POST)
     @ResponseBody
-    public String readOrder(@PathVariable("id") long id){
+    public String readOrder(@PathVariable("id") long id) {
         //TODO
-        // Read an order of given id from ebay
+        // Read an order of given id from magento
         return null;
     }
 
-    @RequestMapping(value = "/read/product/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/read/product/{id}", method = RequestMethod.POST)
     @ResponseBody
-    public String readProduct(@PathVariable("id") long id){
+    public String readProduct(@PathVariable("id") long id) {
         //TODO
         return null;
     }
 
+    // -------------------------------------------------------------------------------------------------------------//
+
+    @RequestMapping(value = "/read/customers", method = RequestMethod.POST)
+    @ResponseBody
+    public String readCustomer() {
+        //TODO
+        // Read a customer with id from magento
+        return null;
+    }
+
+    @RequestMapping(value = "/read/orders", method = RequestMethod.POST)
+    @ResponseBody
+    public String readOrder() {
+        //TODO
+        // Read an order of given id from magento
+        return null;
+    }
+
+    @RequestMapping(value = "/read/products", method = RequestMethod.POST)
+    @ResponseBody
+    public String readProduct() {
+        //TODO
+        return null;
+    }
+
+    // -------------------------------------------------------------------------------------------------------------//
 
 
+    @RequestMapping(value = "/push/customer/{id}", method = RequestMethod.POST)
+    @ResponseBody
+    public String pushCustomer(@PathVariable("id") long id) {
+        //TODO
+        // Read a customer with id from magento
+        return null;
+    }
+
+    @RequestMapping(value = "/push/order/{id}", method = RequestMethod.POST)
+    @ResponseBody
+    public String pushOrder(@PathVariable("id") long id) {
+        //TODO
+        // Read an order of given id from magento
+        return null;
+    }
+
+    @RequestMapping(value = "/push/product/{id}", method = RequestMethod.POST)
+    @ResponseBody
+    public String pushProduct(@PathVariable("id") long id) {
+        //TODO
+        return null;
+    }
+
+    // -------------------------------------------------------------------------------------------------------------//
 
 
+    @RequestMapping(value = "/push/customers", method = RequestMethod.POST)
+    @ResponseBody
+    public String pushCustomer() {
+        //TODO
+        // Read a customer with id from magento
+        return null;
+    }
 
+    @RequestMapping(value = "/push/orders", method = RequestMethod.POST)
+    @ResponseBody
+    public String pushOrder() {
+        //TODO
+        // Read an order of given id from magento
+        return null;
+    }
 
-
-
-
-
+    @RequestMapping(value = "/push/products", method = RequestMethod.POST)
+    @ResponseBody
+    public String pushProduct() {
+        //TODO
+        return null;
+    }
 }

@@ -14,11 +14,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * Created by sugan on 27/08/16.
  */
 @Controller
-@RequestMapping(value = "/amazon")
-public class AmazonController {
-
-    private static final String awsAccessKeyId = "<AWS ACCESS KEY ID>";
-    private static final String awsSecretAccessKey = "<AWS SECRET ACCESS KEY>";
+@RequestMapping(value = "/ebay")
+public class EbayController {
 
     @Autowired
     private CustomerDao customerDao;
@@ -33,7 +30,7 @@ public class AmazonController {
     @ResponseBody
     public String readCustomer(@PathVariable("id") long id){
         //TODO
-        // Read a customer with id from amazon
+        // Read a customer with id from ebay
         return null;
     }
 
@@ -41,7 +38,7 @@ public class AmazonController {
     @ResponseBody
     public String readOrder(@PathVariable("id") long id){
         //TODO
-        // Read an order of given id from amazon
+        // Read an order of given id from ebay
         return null;
     }
 
@@ -58,7 +55,7 @@ public class AmazonController {
     @ResponseBody
     public String readCustomer(){
         //TODO
-        // Read a customer with id from amazon
+        // Read a customer with id from ebay
         return null;
     }
 
@@ -66,7 +63,7 @@ public class AmazonController {
     @ResponseBody
     public String readOrder(){
         //TODO
-        // Read an order of given id from amazon
+        // Read an order of given id from ebay
         return null;
     }
 
@@ -84,7 +81,7 @@ public class AmazonController {
     @ResponseBody
     public String pushCustomer(@PathVariable("id") long id){
         //TODO
-        // Read a customer with id from amazon
+        // Read a customer with id from ebay
         return null;
     }
 
@@ -92,7 +89,7 @@ public class AmazonController {
     @ResponseBody
     public String pushOrder(@PathVariable("id") long id){
         //TODO
-        // Read an order of given id from amazon
+        // Read an order of given id from ebay
         return null;
     }
 
@@ -110,7 +107,7 @@ public class AmazonController {
     @ResponseBody
     public String pushCustomer(){
         //TODO
-        // Read a customer with id from amazon
+        // Read a customer with id from ebay
         return null;
     }
 
@@ -118,7 +115,7 @@ public class AmazonController {
     @ResponseBody
     public String pushOrder(){
         //TODO
-        // Read an order of given id from amazon
+        // Read an order of given id from ebay
         return null;
     }
 
