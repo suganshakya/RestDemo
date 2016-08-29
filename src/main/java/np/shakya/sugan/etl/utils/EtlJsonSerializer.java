@@ -12,7 +12,6 @@ import java.io.IOException;
  */
 public class EtlJsonSerializer extends JsonSerializer{
 
-
     public void serialize(Object o, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException, JsonProcessingException {
         // TODO
     }

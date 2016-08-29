@@ -11,6 +11,7 @@ import java.io.IOException;
  * Created by sugan on 28/08/16.
  */
 public class EtlJsonDeserializer  extends JsonDeserializer<Object>{
+
     public Object deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException, JsonProcessingException {
         // TODO
         return null;
